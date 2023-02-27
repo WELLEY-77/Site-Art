@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art - Mostra de arte de rua</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/art_index.css">
+</head>
+
+<body>
+    <header class="container-fluid mt-4">
+        <div class="row row-cols-1">
+            <div class="row justify-content-center">
+                <img id="header__logo" class="col-2" src="images/art_logo.svg" alt="Art - Mostra de arte de rua">
+                <h1 class="col-1">Art</h1>
+            </div>
+            <p class="row justify-content-center">Exibições de arte urbana</p>
+        </div>
+    </header>
+    <hr>
+    <nav class="navbar navbar-expand justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Projetos</a></li>
+            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Artistas</a></li>
+            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main class="container main__width mb-5">
+        <div class="main__div">
+            <div class="bg-white main__div_div">
+                <h2>Arte no muro de Davi</h2>
+                <p class="text-secondary">Realizada em 20/05/2021</p>
+                <button class="btn btn-dark popup__button0" onclick="meuPopup(0);">Detalhes
+                    <p class="popup__texto0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+        <div class="row">
+            <h2 class="text-center">Artes em Destaque</h2>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col my-4">
+                <div class="small__image" id="img-2"></div>
+                <h3>Obra de Arthur</h3>
+                <p class="text-secondary">Realizada em: 26/01/2018</p>
+                <p class="text-secondary">Realizada em 20/05/2021</p>
+                <button class="btn btn-dark popup__button1" onclick="meuPopup(1);">Detalhes
+                    <p class="popup__texto1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-3"></div>
+                <h3>Grafite da Av. Paulista</h3>
+                <p class="text-secondary">Realizada em: 14/06/2021</p>
+                <p class="text-secondary">Realizada em 20/05/2021</p>
+                <button class="btn btn-dark popup__button2" onclick="meuPopup(2);">Detalhes
+                    <p class="popup__texto2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-4"></div>
+                <h3>Arte em conjunto do Metrô</h3>
+                <p class="text-secondary">Realizada em: 19/01/2018</p>
+                <button class="btn btn-dark popup__button3" onclick="meuPopup(3);">Detalhes
+                    <p class="popup__texto3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-5"></div>
+                <h3>Obra de Paulo</h3>
+                <p class="text-secondary">Realizada em: 12/12/2015</p>
+                <button class="btn btn-dark popup__button4" onclick="meuPopup(4);">Detalhes
+                    <p class="popup__texto4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-6"></div>
+                <h3>Grafite no Centro da Cidade</h3>
+                <p class="text-secondary">Realizada em: 13/02/2012</p>
+                <button class="btn btn-dark popup__button5" onclick="meuPopup(5);">Detalhes
+                    <p class="popup__texto5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-7"></div>
+                <h3>Grafite nos muros da cidade</h3>
+                <p class="text-secondary">Realizada em: 01/05/2017</p>
+                <button class="btn btn-dark popup__button6" onclick="meuPopup(6);">Detalhes
+                    <p class="popup__texto6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+            <div class="col my-4">
+                <div class="small__image" id="img-8"></div>
+                <h3>Obra de Pablo</h3>
+                <p class="text-secondary">Realizada em: 04/10/2020</p>
+                <button class="btn btn-dark popup__button7" onclick="meuPopup(7);">Detalhes
+                    <p class="popup__texto7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                        incidunt asperiores quae,
+                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="container text-center">
+        <hr>
+        <p>Nos encontre nas redes sociais:</p>
+        <nav class="navbar navbar-expand justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i class="bi bi-facebook fs-4"></i></a>
+                </li>
+                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i
+                            class="bi bi-instagram fs-4"></i></a>
+                </li>
+                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i class="bi bi-twitter fs-4"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <p>Art &copy; 2021</p>
+    </footer>
+    <script src="./js/art_index.js"></script>
+</body>
+
+</html>
