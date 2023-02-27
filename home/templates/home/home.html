@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,17 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art - Mostra de arte de rua</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/art_index.css">
+    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/art_index.css' %}">
 </head>
 
 <body>
     <header class="container-fluid mt-4">
         <div class="row row-cols-1">
             <div class="row justify-content-center">
-                <img id="header__logo" class="col-2" src="images/art_logo.svg" alt="Art - Mostra de arte de rua">
+                <img id="header__logo" class="col-2" src="{% static 'home/images/art_logo.svg' %}" alt="Art - Mostra de arte de rua">
                 <h1 class="col-1">Art</h1>
             </div>
             <p class="row justify-content-center">Exibições de arte urbana</p>
@@ -139,7 +140,7 @@
         </nav>
         <p>Art &copy; 2021</p>
     </footer>
-    <script src="./js/art_index.js"></script>
+    <script src="{% static 'home/js/art_index.js' %}"></script>
 </body>
 
 </html>
