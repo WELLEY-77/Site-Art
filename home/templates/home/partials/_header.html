@@ -1,0 +1,27 @@
+{% load static %}
+<header class="container-fluid mt-4">
+    <div class="row row-cols-1">
+        <div class="row justify-content-center">
+            <img id="header__logo" class="col-2" src="{% static 'home/images/art_logo.svg' %}" alt="Art - Mostra de arte de rua">
+            <h1 class="col-1">Art</h1>
+        </div>
+        <p class="row justify-content-center">Exibições de arte urbana</p>
+    </div>
+</header>
+<hr>
+
+{% include 'home/partials/_menu.html' %}
+
+<main class="container main__width mb-5">
+    <div class="main__div">
+        <div class="bg-white main__div_div">
+            <h2>Arte no muro de Davi</h2>
+            <p class="text-secondary">Realizada em 20/05/2021</p>
+            <button class="btn btn-dark popup__button0" onclick="meuPopup(0);">Detalhes
+                <p class="popup__texto0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
+                    incidunt asperiores quae,
+                    odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
+            </button>
+        </div>
+    </div>
+</main>

@@ -1,50 +1,6 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art - Mostra de arte de rua</title>
-    <link rel="shortcut icon" href="{% static 'home/images/favicon.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'home/css/bootstrap-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/art_index.css' %}">
-</head>
-
-<body>
-    <header class="container-fluid mt-4">
-        <div class="row row-cols-1">
-            <div class="row justify-content-center">
-                <img id="header__logo" class="col-2" src="{% static 'home/images/art_logo.svg' %}" alt="Art - Mostra de arte de rua">
-                <h1 class="col-1">Art</h1>
-            </div>
-            <p class="row justify-content-center">Exibições de arte urbana</p>
-        </div>
-    </header>
-    <hr>
-    <nav class="navbar navbar-expand justify-content-center">
-        <ul class="navbar-nav">
-            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Home</a></li>
-            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Projetos</a></li>
-            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Artistas</a></li>
-            <li class="nav-item mx-2"><a class="nav-link link-secondary" href="#">Contato</a></li>
-        </ul>
-    </nav>
-    <main class="container main__width mb-5">
-        <div class="main__div">
-            <div class="bg-white main__div_div">
-                <h2>Arte no muro de Davi</h2>
-                <p class="text-secondary">Realizada em 20/05/2021</p>
-                <button class="btn btn-dark popup__button0" onclick="meuPopup(0);">Detalhes
-                    <p class="popup__texto0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit perferendis
-                        incidunt asperiores quae,
-                        odit pariatur? Cumque porro incidunt deleniti aspernatur atque, qui neque?</p>
-                </button>
-            </div>
-        </div>
-    </main>
+{% include 'home/_base.html' %}
+{% include 'home/partials/_header.html' %}
     <section class="container">
         <div class="row">
             <h2 class="text-center">Artes em Destaque</h2>
@@ -124,23 +80,4 @@
             </div>
         </div>
     </section>
-    <footer class="container text-center">
-        <hr>
-        <p>Nos encontre nas redes sociais:</p>
-        <nav class="navbar navbar-expand justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i class="bi bi-facebook fs-4"></i></a>
-                </li>
-                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i
-                            class="bi bi-instagram fs-4"></i></a>
-                </li>
-                <li class="nav-item mx-4"><a class="nav-link link-dark" href="#"><i class="bi bi-twitter fs-4"></i></a>
-                </li>
-            </ul>
-        </nav>
-        <p>Art &copy; 2021</p>
-    </footer>
-    <script src="{% static 'home/js/art_index.js' %}"></script>
-</body>
-
-</html>
+{% include 'home/partials/_footer.html' %}
