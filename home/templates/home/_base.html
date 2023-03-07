@@ -14,7 +14,9 @@
 </head>
 
 <body>  
-    
+    {% include 'home/partials/_header.html' %}
+    {% block content %}{% endblock  %}
+    {% include 'home/partials/_footer.html' %}
 </body>
 
 </html>

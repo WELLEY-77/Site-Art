@@ -1,6 +1,6 @@
+{% extends 'home/_base.html' %}
 {% load static %}
-{% include 'home/_base.html' %}
-{% include 'home/partials/_header.html' %}
+{% block content  %}
     <section class="container">
         <div class="row">
             <h2 class="text-center">Artes em Destaque</h2>
@@ -80,4 +80,4 @@
             </div>
         </div>
     </section>
-{% include 'home/partials/_footer.html' %}
+{% endblock  %}
